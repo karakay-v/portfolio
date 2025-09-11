@@ -13,7 +13,8 @@
                 <Project    :screenshoot="EsettlementScreenshoot"
                             number="01"
                             name="Electronic settlement system for dormitories"
-                            description="Esettltment is the electronic settlement system for dormitories. \nIt's main task is to simplify the process of submitting documents for accommodation in a dormitory by applicants/students."
+                            description="Esettltment is the electronic settlement system for dormitories. 
+                                It's main task is to simplify the process of submitting documents for accommodation in a dormitory by applicants/students."
                             link="https://3.76.126.104/"
                             sourceLink="https://github.com/sc-fmct-tech/esettlement-spa/" />
             </div>
