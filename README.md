@@ -24,7 +24,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Karakay-V/portfolio">
-    <img src="src/assets/logo-reversed.png" alt="Logo" width="max-content" height="80">
+    <img src="src/assets/logo-outlined.png" alt="Logo" width="max-content" height="80">
   </a>
 
 <h3 align="center">Portfolio</h3>
