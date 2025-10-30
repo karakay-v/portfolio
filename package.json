@@ -18,7 +18,8 @@
     "vue-use-fixed-header": "^2.0.3",
     "vue3-burger-menu": "^1.1.1",
     "vue3-toastify": "^0.2.8",
-    "vueperslides": "^3.6.0"
+    "vueperslides": "^3.6.0",
+    "node": "^20.19.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
