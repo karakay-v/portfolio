@@ -3,7 +3,14 @@
         <div :class="`wrapper-project ${align === Align.Right ? 'align-right' : 'align-left'}`">
             <div class="inner-project_image">
                 <div class="wrapper-project_image">
-                    <img class="image-screenshoot" :src="screenshoot" :alt="name" />
+                    <VueLoaderImage delay="1000" 
+                                    :src="screenshoot"
+                                    :alt="name" 
+                                    width="100%"
+                                    height="100%"
+                                    pill="19px">
+                        <div class="loader"/>
+                    </VueLoaderImage>
                 </div>
             </div>
 
@@ -47,6 +54,8 @@ import { defineComponent } from 'vue';
 import { Align } from '../../types/align';
 import LinkIcon from '../../assets/icons/readmore-default.png';
 import SourceIcon from '../../assets/icons/source.png';
+import VueLoaderImage from 'vue3-loader-image';
+import 'vue3-loader-image/dist/style.css'
 
 function isValidLink(value: string): boolean {
   if (value === '') return true; // allow empty (not required)
@@ -80,6 +89,9 @@ export default defineComponent({
             LinkIcon,
             SourceIcon,
         });
+    },
+    components: {
+        VueLoaderImage,
     },
     props: {
         align: {
@@ -170,19 +182,56 @@ h3, h4, p {
 
 .wrapper-project_image {
     max-width: 530px;
-    width: max-content;
+    width: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include image.prevent-manipulations;
 
-    img.image-screenshoot {
-        width: 100%;
-        border-radius: 19px;
+    .loader {
+        width: 80px;
+        aspect-ratio: 1;
+        position: relative;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: -16px 0 0 -16px;
+            width: 32px;
+            aspect-ratio: 1;
+            background: $primary-white;
+            animation: l2-1 2s  infinite, l2-2 1s infinite ;
+            transition: box-shadow ease 0.3s ease;
+            @include shadow.loader-white-shadow;
+        }
+
+        &:after {
+            background: $primary-neutral;
+            animation-delay: -1s,0s;
+        }
+    }
+
+    @keyframes l2-1 {
+        0%   { top: 0   ; left: 0    }
+        25%  { top: 100%; left: 0    }
+        50%  { top: 100%; left: 100% }
+        75%  { top: 0   ; left: 100% }
+        100% { top: 0   ; left: 0    }
+    }
+
+    @keyframes l2-2 {
+        40%, 50% { transform: rotate(0.25turn) scale(0.5) }
+        100%     { transform: rotate(0.5turn) scale(1) }
     }
 
     @media (max-width: 1260px) {
         width: 100%;
         height: 400px;
 
-        img.image-screenshoot {
+        img {
             height: 100%;
             object-fit: cover;
             object-position: center;
