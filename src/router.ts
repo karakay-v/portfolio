@@ -1,4 +1,4 @@
-import { createWebHistory, createRouter, type RouteLocationNormalizedLoaded } from 'vue-router'
+import { createWebHashHistory, createRouter, type RouteLocationNormalizedLoaded } from 'vue-router'
 
 import Portfolio from './components/pages/Portfolio.vue';
 import Open from './components/redirects/Open.vue';
@@ -32,6 +32,6 @@ const routes = [
 ]
 
 export const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes,
 })
