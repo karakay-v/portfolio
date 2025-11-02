@@ -75,7 +75,7 @@ export default defineComponent({
     },
     methods: {
         openLink(url: string) {
-            window.open(`/redirect?to=${url}`, '_blank');
+            window.open(`#/redirect?to=${url}`, '_blank');
         },
     },
 });

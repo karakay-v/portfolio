@@ -17,7 +17,8 @@ const routes = [
         component: Open,
         props: {
             path: '/CV/Karakai-V_CV-EN.pdf', 
-            timeout: 1000,
+            delay: 1000,
+            timeout: 5000,
         },
         alias: [ '/cv', ],
     },
@@ -26,7 +27,8 @@ const routes = [
         component: Open,
         props: (route: RouteLocationNormalizedLoaded) => ({
             path: route.query.to,
-            timeout: 500,
+            delay: 500,
+            timeout: 2500,
         }),
     },
 ]
