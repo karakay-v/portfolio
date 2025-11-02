@@ -24,14 +24,14 @@
 // Double white shadow for loader on black background
 @mixin loader-white-shadow {
     box-shadow:
-        0px 2px 4px -2px rgba($primary-white, 0.25),
-        0px 4px 4px -2px rgba($primary-white, 0.15);
+        0px 4px 8px -4px rgba($primary-white, 0.25),
+        0px 8px 8px -4px rgba($primary-white, 0.15);
 }
 
 // Double black shadow for loader on white background
 @mixin loader-black-shadow {
     box-shadow:
-        0px 2px 4px -2px rgba($primary-black, 0.25),
-        0px 4px 4px -2px rgba($primary-black, 0.15);
+        0px 4px 8px -4px rgba($primary-black, 0.25),
+        0px 8px 8px -4px rgba($primary-black, 0.15);
 }
 
