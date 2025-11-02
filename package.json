@@ -15,6 +15,7 @@
     "floating-vue": "^5.2.2",
     "node": "^20.19.0",
     "vue": "^3.5.17",
+    "vue-router": "^4.6.3",
     "vue-scrollto": "^2.20.0",
     "vue-use-fixed-header": "^2.0.3",
     "vue3-burger-menu": "^1.1.1",

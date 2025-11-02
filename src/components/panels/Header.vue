@@ -41,10 +41,7 @@ const { styles } = useFixedHeader(headerRef)
                 @click="handleClick('#contact-me', $event)" />
         </nav>
 
-        <a :href="CV" 
-           download="Karakai-V_CV-EN.pdf"
-           class="download_button-cv"
-        >
+        <a href="/resume" target="_blank" class="download_button-cv">
             <Button label="Resume"
                     :icon="DownloadIcon"
                     :iconPosition="ButtonIconPosition.Right" />
@@ -84,10 +81,7 @@ const { styles } = useFixedHeader(headerRef)
                     :isSelected="selectedLink === '#contact-me'"
                     @click="handleClick('#contact-me', $event)" />
             </div>
-
-            <a :href="CV" 
-                download="Karakai-V_CV-EN.pdf"
-            >
+            <a href="/resume" target="_blank">
                 <Button label="Resume"
                         :icon="DownloadIcon"
                         :state="ButtonState.Active"
@@ -105,7 +99,6 @@ import Button from '../UI/Button.vue';
 import DownloadIcon from '../../assets/icons/download.png';
 import { ButtonIconPosition } from '../../types/button-types/button-icon-position';
 import NavLink from '../UI/NavLink.vue';
-import CV from '../../assets/CV/Karakai-V_CV-EN.pdf';
 
 // @ts-ignore
 import { Slide } from 'vue3-burger-menu';
@@ -127,7 +120,6 @@ export default defineComponent({
             ButtonState,
             DownloadIcon,
             ButtonIconPosition,
-            CV,
             selectedLink: "",
             underlineStyle: {
                 left: '0px',
