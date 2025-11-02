@@ -30,14 +30,14 @@
 
                     <div class="container-links">
                         <a v-if="link !== ''" class="project-link"
-                            :href="link"
+                            :href="`/redirect?to=${link}`"
                             target="_blank"
                         >
                             <img class="image-link" :src="LinkIcon" :alt="link" />
                         </a>
 
                         <a v-if="sourceLink !== ''" class="project-link"
-                            :href="sourceLink"
+                            :href="`/redirect?to=${sourceLink}`"
                             target="_blank"
                         >
                             <img class="image-link" :src="SourceIcon" :alt="link" />
