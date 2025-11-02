@@ -3,7 +3,14 @@
         <div :class="`wrapper-project ${align === Align.Right ? 'align-right' : 'align-left'}`">
             <div class="inner-project_image">
                 <div class="wrapper-project_image">
-                    <img class="image-screenshoot" :src="screenshoot" :alt="name" />
+                    <VueLoaderImage delay="1000" 
+                                    :src="screenshoot"
+                                    :alt="name" 
+                                    width="100%"
+                                    height="100%"
+                                    pill="19px">
+                        <Loader :theme="Theme.Dark" />
+                    </VueLoaderImage>
                 </div>
             </div>
 
@@ -23,14 +30,14 @@
 
                     <div class="container-links">
                         <a v-if="link !== ''" class="project-link"
-                            :href="link"
+                            :href="`/redirect?to=${link}`"
                             target="_blank"
                         >
                             <img class="image-link" :src="LinkIcon" :alt="link" />
                         </a>
 
                         <a v-if="sourceLink !== ''" class="project-link"
-                            :href="sourceLink"
+                            :href="`/redirect?to=${sourceLink}`"
                             target="_blank"
                         >
                             <img class="image-link" :src="SourceIcon" :alt="link" />
@@ -47,6 +54,11 @@ import { defineComponent } from 'vue';
 import { Align } from '../../types/align';
 import LinkIcon from '../../assets/icons/readmore-default.png';
 import SourceIcon from '../../assets/icons/source.png';
+import VueLoaderImage from 'vue3-loader-image';
+import 'vue3-loader-image/dist/style.css'
+import Loader from './Loader.vue';
+import { Theme } from '../../types/theme';
+import Open from '../redirects/Open.vue';
 
 function isValidLink(value: string): boolean {
   if (value === '') return true; // allow empty (not required)
@@ -79,7 +91,13 @@ export default defineComponent({
             Align,
             LinkIcon,
             SourceIcon,
+            Theme,
         });
+    },
+    components: {
+        VueLoaderImage,
+        Loader,
+        Open,
     },
     props: {
         align: {
@@ -170,19 +188,18 @@ h3, h4, p {
 
 .wrapper-project_image {
     max-width: 530px;
-    width: max-content;
+    width: 530px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include image.prevent-manipulations;
 
-    img.image-screenshoot {
-        width: 100%;
-        border-radius: 19px;
-    }
 
     @media (max-width: 1260px) {
         width: 100%;
-        height: 400px;
+        height: max-content;
 
-        img.image-screenshoot {
+        img {
             height: 100%;
             object-fit: cover;
             object-position: center;
