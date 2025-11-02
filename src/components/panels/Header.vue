@@ -41,7 +41,7 @@ const { styles } = useFixedHeader(headerRef)
                 @click="handleClick('#contact-me', $event)" />
         </nav>
 
-        <a href="/resume" target="_blank" class="download_button-cv">
+        <a href="#/resume" target="_blank" class="download_button-cv">
             <Button label="Resume"
                     :icon="DownloadIcon"
                     :iconPosition="ButtonIconPosition.Right" />
@@ -81,7 +81,7 @@ const { styles } = useFixedHeader(headerRef)
                     :isSelected="selectedLink === '#contact-me'"
                     @click="handleClick('#contact-me', $event)" />
             </div>
-            <a href="/resume" target="_blank">
+            <a href="#/resume" target="_blank">
                 <Button label="Resume"
                         :icon="DownloadIcon"
                         :state="ButtonState.Active"
