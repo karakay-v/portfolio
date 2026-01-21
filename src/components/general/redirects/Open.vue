@@ -19,12 +19,12 @@
 
 <script lang="ts">
 import { defineComponent, onMounted, ref } from 'vue';
-import Loader from '../UI/Loader.vue';
-import { Theme } from '../../types/theme';
-import Button from '../UI/Button.vue';
-import { ButtonSize } from '../../types/button-types/button-size';
-import RetryIcon from '../../assets/icons/retry.svg';
-import { ButtonIconPosition } from '../../types/button-types/button-icon-position';
+import Loader from '@/components/general/UI/Loader.vue';
+import { Theme } from '@/types/theme';
+import Button from '@/components/general/UI/Button.vue';
+import { ButtonSize } from '@/types/button-types/button-size';
+import RetryIcon from '@/assets/icons/retry.svg';
+import { ButtonIconPosition } from '@/types/button-types/button-icon-position';
 
 function isValidLink(value: string): boolean {
   if (value === '') return true; // allow empty (not required)

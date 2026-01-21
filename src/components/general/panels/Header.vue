@@ -94,17 +94,17 @@ const { styles } = useFixedHeader(headerRef)
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Logo from '../UI/Logo.vue';
-import Button from '../UI/Button.vue';
-import DownloadIcon from '../../assets/icons/download.png';
-import { ButtonIconPosition } from '../../types/button-types/button-icon-position';
-import NavLink from '../UI/NavLink.vue';
+import Logo from '@/components/general/UI/Logo.vue';
+import Button from '@/components/general/UI/Button.vue';
+import DownloadIcon from '@/assets/icons/download.png';
+import { ButtonIconPosition } from '@/types/button-types/button-icon-position';
+import NavLink from '@/components/general/UI/NavLink.vue';
 
 // @ts-ignore
 import { Slide } from 'vue3-burger-menu';
 
-import { Theme } from '../../types/theme';
-import { ButtonState } from '../../types/button-types/button-state';
+import { Theme } from '@/types/theme';
+import { ButtonState } from '@/types/button-types/button-state';
 
 export default defineComponent({
     name: "Header",

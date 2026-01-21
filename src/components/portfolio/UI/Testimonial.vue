@@ -35,8 +35,8 @@
 
 <script scoped lang="ts">
 import { defineComponent } from 'vue';
-import { Theme } from '../../types/theme';
-import QuoteSymbolIcon from '../../assets/icons/quote-symbol.svg'; 
+import { Theme } from '@/types/theme';
+import QuoteSymbolIcon from '@/assets/icons/quote-symbol.svg'; 
 
 export default defineComponent({
     name: "Testimonial",

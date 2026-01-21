@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import Logotype from "../../assets/logo.png";
+import Logotype from "@/assets/logo.png";
 
 export default defineComponent({
     name: "Logo",

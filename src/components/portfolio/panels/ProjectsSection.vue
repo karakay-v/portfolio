@@ -48,15 +48,15 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Project from '../UI/Project.vue';
-import EsettlementScreenshoot from '../../assets/projects/Esettlement.png';
-import USeekScreenshoot from "../../assets/projects/U'Seek.png";
-import PortfolioScreenshoot from '../../assets/projects/Portfolio.png';
-import { Align } from '../../types/align';
-import { useResponsiveAos } from '../../utils/aosHelper';
+import Project from '@/components/portfolio/UI/Project.vue';
+import EsettlementScreenshoot from '@/assets/projects/Esettlement.png';
+import USeekScreenshoot from "@/assets/projects/U'Seek.png";
+import PortfolioScreenshoot from '@/assets/projects/Portfolio.png';
+import { Align } from '@/types/align';
+import { useResponsiveAos } from '@/utils/aosHelper';
 
 export default defineComponent({
-    name: "MyProjects",
+    name: "ProjectsSection",
     data() {
         return({
             Align,

@@ -22,8 +22,8 @@
 
 <script lang="ts">
   import { defineComponent } from 'vue'
-  import { InputState } from '../../types/input-types/input-state';
-  import { InputDataTypes } from '../../types/input-types/input-data-types';
+  import { InputState } from '@/types/input-types/input-state';
+  import { InputDataTypes } from '@/types/input-types/input-data-types';
 
   export default defineComponent({
     name: "TextArea",

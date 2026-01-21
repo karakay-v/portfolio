@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Logo from '../UI/Logo.vue';
+import Logo from '@/components/general/UI/Logo.vue';
 
 export default defineComponent({
     name: "Footer",

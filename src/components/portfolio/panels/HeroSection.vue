@@ -44,16 +44,16 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Button from '../UI/Button.vue';
-import { ButtonIconPosition } from '../../types/button-types/button-icon-position';
-import { ButtonState } from '../../types/button-types/button-state';
-import LinkedInIcon from '../../assets/icons/linkedin.png';
-import GitHubIcon from '../../assets/icons/github.png';
-import RedditIcon from '../../assets/icons/reddit.png';
-import DiscordIcon from '../../assets/icons/discord.png';
-import BackgroundPCBoy from '../../assets/covers/boy-cover.pc.png';
-import BackgroundMobileBoy from '../../assets/covers/boy-cover.mobile.png';
-import { ButtonSize } from '../../types/button-types/button-size';
+import Button from '@/components/general/UI/Button.vue';
+import { ButtonIconPosition } from '@/types/button-types/button-icon-position';
+import { ButtonState } from '@/types/button-types/button-state';
+import LinkedInIcon from '@/assets/icons/linkedin.png';
+import GitHubIcon from '@/assets/icons/github.png';
+import RedditIcon from '@/assets/icons/reddit.png';
+import DiscordIcon from '@/assets/icons/discord.png';
+import BackgroundPCBoy from '@/assets/covers/boy-cover.pc.png';
+import BackgroundMobileBoy from '@/assets/covers/boy-cover.mobile.png';
+import { ButtonSize } from '@/types/button-types/button-size';
 
 export default defineComponent({
     name: "HeroSection",
@@ -172,14 +172,14 @@ h2, p {
     right: 32px;
     z-index: 1;
 
-    background-image: url('../../assets/covers/boy-cover.pc.png');
+    background-image: url('@/assets/covers/boy-cover.pc.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 
 
     @media (max-width: 1260px) {
-        background-image: url('../../assets/covers/boy-cover.mobile.png');
+        background-image: url('@/assets/covers/boy-cover.mobile.png');
         width: 100%;
         aspect-ratio: 686 / 664;
         position: static;

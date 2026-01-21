@@ -51,14 +51,14 @@
 
 <script scoped lang="ts">
 import { defineComponent } from 'vue';
-import { Align } from '../../types/align';
-import LinkIcon from '../../assets/icons/readmore-default.png';
-import SourceIcon from '../../assets/icons/source.png';
+import { Align } from '@/types/align';
+import LinkIcon from '@/assets/icons/readmore-default.png';
+import SourceIcon from '@/assets/icons/source.png';
 import VueLoaderImage from 'vue3-loader-image';
 import 'vue3-loader-image/dist/style.css'
-import Loader from './Loader.vue';
-import { Theme } from '../../types/theme';
-import Open from '../redirects/Open.vue';
+import Loader from '@/components/general/UI/Loader.vue';
+import { Theme } from '@/types/theme';
+import Open from '@/components/general/redirects/Open.vue';
 
 function isValidLink(value: string): boolean {
   if (value === '') return true; // allow empty (not required)

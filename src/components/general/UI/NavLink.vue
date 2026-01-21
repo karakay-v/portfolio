@@ -15,7 +15,7 @@
 
 <script scoped lang="ts">
 import { defineComponent } from 'vue';
-import { Theme } from '../../types/theme';
+import { Theme } from '@/types/theme';
 
 export default defineComponent({
     name: "NavLink",

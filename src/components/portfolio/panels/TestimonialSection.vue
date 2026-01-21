@@ -29,12 +29,12 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Testimonial from '../UI/Testimonial.vue';
-import BoyPhoto from '../../assets/people/boy.png';
-import GirlPhoto from '../../assets/people/girl.png';
+import Testimonial from '@/components/portfolio/UI/Testimonial.vue';
+import BoyPhoto from '@/assets/people/boy.png';
+import GirlPhoto from '@/assets/people/girl.png';
 
 export default defineComponent({
-    name: "MyTestimonial",
+    name: "TestimonialSection",
     data() {
         return({
             BoyPhoto,

@@ -84,18 +84,18 @@
 <script lang="ts">
 import { defineComponent, ref } from "vue";
 import emailjs from "@emailjs/browser";
-import TextInput from "../UI/TextInput.vue";
-import TextArea from "../UI/TextArea.vue";
-import Button from "../UI/Button.vue";
-import { ButtonIconPosition } from '../../types/button-types/button-icon-position';
-import { ButtonState } from '../../types/button-types/button-state';
-import { ButtonSize } from "../../types/button-types/button-size";
-import LinkedInIcon from '../../assets/icons/linkedin.png';
-import GitHubIcon from '../../assets/icons/github.png';
-import RedditIcon from '../../assets/icons/reddit.png';
-import DiscordIcon from '../../assets/icons/discord.png';
-import { InputDataTypes } from "../../types/input-types/input-data-types";
-import { useResponsiveAos } from "../../utils/aosHelper";
+import TextInput from "@/components/general/UI/TextInput.vue";
+import TextArea from "@/components/general/UI/TextArea.vue";
+import Button from "@/components/general/UI/Button.vue";
+import { ButtonIconPosition } from '@/types/button-types/button-icon-position';
+import { ButtonState } from '@/types/button-types/button-state';
+import { ButtonSize } from "@/types/button-types/button-size";
+import LinkedInIcon from '@/assets/icons/linkedin.png';
+import GitHubIcon from '@/assets/icons/github.png';
+import RedditIcon from '@/assets/icons/reddit.png';
+import DiscordIcon from '@/assets/icons/discord.png';
+import { InputDataTypes } from "@/types/input-types/input-data-types";
+import { useResponsiveAos } from "@/utils/aosHelper";
 import { toast } from "vue3-toastify";
 import "vue3-toastify/dist/index.css";
 

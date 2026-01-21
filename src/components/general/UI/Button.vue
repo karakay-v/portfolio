@@ -25,10 +25,10 @@
 
   <script lang="ts">
   import { defineComponent } from 'vue'
-  import { ButtonSize } from '../../types/button-types/button-size.ts';
-  import { ButtonIconPosition } from "../../types/button-types/button-icon-position.ts";
-  import { ButtonState } from "../../types/button-types/button-state.ts";
-  import DownloadIcon from "../../assets/icons/download.png";
+  import { ButtonSize } from '@/types/button-types/button-size.ts';
+  import { ButtonIconPosition } from "@/types/button-types/button-icon-position.ts";
+  import { ButtonState } from "@/types/button-types/button-state.ts";
+  import DownloadIcon from "@/assets/icons/download.png";
 
   export default defineComponent({
     name: "Button",

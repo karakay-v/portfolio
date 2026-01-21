@@ -22,16 +22,16 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Experience from '../UI/Experience.vue';
+import Experience from '@/components/portfolio/UI/Experience.vue';
 
 /***
     Image Designer: https://www.figma.com/@najmahsalam
     Figma File: https://www.figma.com/community/file/1313934100864626000/alternative-linkedin-opentowork-banners
 ***/
-import DuckWhichOpenToWork from '../../assets/icons/open-to-work.png';
+import DuckWhichOpenToWork from '@/assets/icons/open-to-work.png';
 
 export default defineComponent({
-    name: "MyExpirienceSection",
+    name: "ExperienceSection",
     data() {
         return({
             DuckWhichOpenToWork,

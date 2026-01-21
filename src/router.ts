@@ -1,7 +1,7 @@
 import { createWebHashHistory, createRouter, type RouteLocationNormalizedLoaded } from 'vue-router'
 
-import Portfolio from './components/pages/Portfolio.vue';
-import Open from './components/redirects/Open.vue';
+import Portfolio from '@/pages/Portfolio.vue';
+import Open from '@/components/general/redirects/Open.vue';
 
 const routes = [
     {

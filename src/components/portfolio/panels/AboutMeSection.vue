@@ -32,8 +32,8 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import { useResponsiveAos } from "../../utils/aosHelper";
-import AboutMePicture from "../../assets/covers/about-me.png";
+import { useResponsiveAos } from "@/utils/aosHelper";
+import AboutMePicture from "@/assets/covers/about-me.png";
 
 export default defineComponent({
   name: "AboutMeSection",
