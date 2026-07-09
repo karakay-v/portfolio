@@ -32,6 +32,7 @@
             <Skill name="AWS EC2" :icon="AwsIcon" />
             <Skill name="MikroTik" :icon="MikroTikIcon" />
             <Skill name="Cisco" :icon="CiscoIcon" />
+            <Skill name="Ubiquiti" :icon="UbiquitiIcon" />
             <Skill name="Junos" :icon="JunosIcon" />
             <Skill name="VyOS" :icon="VyosIcon" />
 
@@ -65,6 +66,7 @@ import ProxmoxIcon from '../../assets/icons/proxmox.png';
 import AwsIcon from '../../assets/icons/aws.png';
 import MikroTikIcon from '../../assets/icons/mikrotik.png';
 import CiscoIcon from '../../assets/icons/cisco.png';
+import UbiquitiIcon from '../../assets/icons/ubiquiti.png';
 import JunosIcon from '../../assets/icons/junos.png';
 import VyosIcon from '../../assets/icons/vyos.png';
 
@@ -95,6 +97,7 @@ export default defineComponent({
             AwsIcon,
             MikroTikIcon,
             CiscoIcon,
+            UbiquitiIcon,
             JunosIcon,
             VyosIcon
         });
