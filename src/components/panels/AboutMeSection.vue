@@ -13,16 +13,16 @@
 
                 <div class="wrapper-text_block">
                     <p>
-                        Hi! My name is Vladyslav, I am a full-stack developer who combines backend and frontend skills to create modern web solutions.
+                        Hi! My name is Vladyslav. I am a Software and Infrastructure Engineer who bridges the gap between writing efficient code and building resilient systems.
                     </p>
                     <p>
-                        My journey in programming began back in 2021. In 2022, I enrolled in university for a technical major to deepen my knowledge and continue developing in this field. Since then, I have been working on various projects - from joint startups with fellow students at the university to implementing personal ideas that I find interesting.
+                        My tech journey began in 2021, and I recently graduated with a degree in Software Engineering. Over the past few years, my focus has evolved from building full-stack web applications and student startups to designing microservices and managing complex network infrastructures.
                     </p>
                     <p>
-                        In my work, in addition to backend and frontend technologies, I also make use of my complementary knowledge in system administration. These skills allow me to build productive, scalable, and easy-to-maintain applications.
+                        In my daily work, I combine my passion for backend development with deep expertise in networking, virtualization, and system administration. I strongly believe that to build truly productive, scalable, and easy-to-maintain applications, an engineer must understand the underlying hardware and networks they run on.
                     </p>
                     <p>
-                        Outside of coding, I enjoy reading literature on psychology, philosophy, and self-development. I also take care of my body by practicing athletics and regular gym workouts with weights, and more recently, I’ve added music to this list as well. My goal is to grow as a skilled engineer, a bright personality, and a good conversationalist.
+                        Outside of the terminal, I enjoy reading literature on psychology, philosophy, and self-development. I also keep myself active through athletics and regular gym workouts, and have recently added music to this list as well. My goal is to continuously grow as a skilled engineer, a well-rounded individual, and a great conversationalist.
                     </p>
                 </div>
             </div>
