@@ -10,36 +10,50 @@
         <div class="wrapper-projects_section">
 
             <div :data-aos="handleAOS('fade-left', 'fade-up')">
-                <Project    :screenshoot="EsettlementScreenshoot"
+                <Project    :screenshoot="''"
                             number="01"
-                            name="Electronic settlement system for dormitories"
-                            description="Esettltment is the electronic settlement system for dormitories. 
-                                It's main task is to simplify the process of submitting documents for accommodation in a dormitory by applicants/students."
-                            link="https://3.76.126.104/"
-                            sourceLink="https://github.com/sc-fmct-tech/esettlement-spa/" />
+                            name="SettleHub: Modern Hotel Management System"
+                            description="A modern, microservice-based software designed to replace expensive, legacy enterprise systems in the hotel industry. Born from a complete architectural rewrite and decomposition of an earlier monolithic project, SettleHub features a highly scalable backend, independent services, and a robust infrastructure."
+                            sourceLink="https://github.com/orgs/SettleHub/repositories/" />
             </div>
 
-            <div :data-aos="handleAOS('fade-right', 'fade-up')">        
-                <Project    :screenshoot="USeekScreenshoot"
+            <div :data-aos="handleAOS('fade-right', 'fade-up')">
+                <Project    :screenshoot="EsettlementScreenshoot"
                             number="02"
-                            name="U'Seek Student Marketplace (Frontend side)"
-                            description="
-                                U'Seek — University (університет) seek (search), and U (slang for “you”). Slogan: “U'Seek — for us, by us. 
-                                U'Seek is the first marketplace in Ukraine created “by students, for students.”
-                                Compared to other well-known global and Ukrainian marketplaces, we are still quite small. However, our users — especially students — already have the opportunity to bring their products or services to a (still low-competition) market in order to find potential buyers or partners."
-                            link="https://useek.com.ua/"
+                            name="Esettlement: Dormitory Monolith (Archived)"
+                            description="An archived student startup built as a monolithic Java application to automate university dormitory accommodations. While tightly coupled to specific university needs, this project served as the crucial proof-of-concept that provided the domain logic and inspiration for the modern SettleHub microservice architecture."
+                            sourceLink="https://github.com/orgs/sc-fmct-tech/repositories/" 
+                            :align="Align.Right" />
+            </div>
+
+            <div :data-aos="handleAOS('fade-left', 'fade-up')">        
+                <Project    :screenshoot="USeekScreenshoot"
+                            number="03"
+                            name="U'Seek Student Marketplace"
+                            description="The first marketplace in Ukraine created exclusively by and for students. 
+                                I developed the frontend architecture using HTML, CSS, and JavaScript, focusing on delivering a responsive, intuitive, and fast user interface that allows students to easily collaborate and trade."
+                            link="https://useek.com.ua/" />
+            </div>
+
+            <div :data-aos="handleAOS('fade-right', 'fade-up')">
+                <Project    :screenshoot="PortfolioScreenshoot"
+                            number="04"
+                            name="Portfolio Website"
+                            description="This is the project you’re literally looking at right now. 
+                                If it’s broken - congrats, you’ve just discovered my debugging stage live. 
+                                If it’s not - then enjoy the ride! The source code is fully open, so feel free to peek behind the curtain on GitHub."
+                            link="https://karakay-v.github.io/"
+                            sourceLink="https://github.com/karakay-v/portfolio/"
                             :align="Align.Right" />
             </div>
 
             <div :data-aos="handleAOS('fade-left', 'fade-up')">
-                <Project    :screenshoot="PortfolioScreenshoot"
-                            number="03"
-                            name="Portfolio Website"
-                            description="This is the project you’re literally looking at right now.  
-                                If it’s broken - congrats, you’ve just discovered my debugging stage live.  
-                                If it’s not - then enjoy the ride! And yes, the source code is open, so feel free to peek behind the curtain on GitHub."
-                            link="https://karakay-v.github.io/"
-                            sourceLink="https://github.com/Karakay-V/portfolio/" />
+                <Project    :screenshoot="HomelabScreenshoot"
+                            number="05"
+                            name="Enterprise-Grade Homelab Infrastructure"
+                            description="A highly secure, multi-node infrastructure environment featuring advanced firewalling, VLAN-based distribution, diverse VPN implementations, and complex routing. 
+                                It operates as a comprehensive data center hosting centralized logging, automated external backups (including commercial remote sites), and a web-based IDE. 
+                                Crucially, it serves as my core CI/CD pipeline, utilizing local GitHub Runners to build, test, and deploy my backend services." />
             </div>
 
         </div>
@@ -52,6 +66,7 @@ import Project from '../UI/Project.vue';
 import EsettlementScreenshoot from '../../assets/projects/Esettlement.png';
 import USeekScreenshoot from "../../assets/projects/U'Seek.png";
 import PortfolioScreenshoot from '../../assets/projects/Portfolio.png';
+import HomelabScreenshoot from '../../assets/projects/homelab.png';
 import { Align } from '../../types/align';
 import { useResponsiveAos } from '../../utils/aosHelper';
 
@@ -63,6 +78,7 @@ export default defineComponent({
             EsettlementScreenshoot,
             USeekScreenshoot,
             PortfolioScreenshoot,
+            HomelabScreenshoot,
         });
     },
     components: {
