@@ -6,7 +6,7 @@
 
             <div data-aos="fade-right" data-aos-duration="2000" class="container-banner">
                 <h2 class="banner_heading">
-                    <span class="display-regular">Hello I’am</span>
+                    <span class="display-regular">Hello I’m</span>
                     <span class="display-extra_bold"> Vlad Karakai.</span>
                     <br />
                     <span class="display-extra_bold">Software</span>
@@ -126,7 +126,7 @@ h2, p {
 
     h2.banner_heading {
         white-space: nowrap;
-        @include fonts.responsive-font(48, 28, 1440);
+        @include fonts.responsive-font(48, 24, 1440);
         @include fonts.prevent-selecting;
         
         span {
@@ -207,6 +207,10 @@ h2, p {
         margin-top: 32px;
         position: static;
         gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+        gap: 16px;
     }
 }
 </style>
