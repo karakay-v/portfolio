@@ -10,10 +10,24 @@
         <div class="wrapper-expirience_section">
 
             <div data-aos="fade-up">
-                <Experience :icon="DuckWhichOpenToWork"
-                    position="Open to Work in Web Development"
-                    description="At the moment, I don’t have official commercial experience in the field (the kind recruiters usually expect to see). However, I have been actively learning and building my own projects since 2021 from web apps and APIs to full portfolio websites. I’m eager to join a team where I can apply my skills, keep growing, and contribute to real-world products."
-                    period="Currently" />
+
+                <Experience 
+                    :icon="MIIT_LLC_Logo"
+                    position="System & Infrastructure Administrator"
+                    company="MIIT LLC"
+                    period="Dec 2025 - Present"
+                    description="Managing ISP network infrastructure to ensure high availability and stable performance. Configuring multi-vendor environments (Cisco, MikroTik, Ubiquiti, Juniper) and acting as an L2 escalation point for complex network diagnostics. Additionally, I lead the technical onboarding process, mentoring and training the L1 support team." 
+                    :isFocused="true"
+                />
+
+                <Experience 
+                    :icon="MIIT_LLC_Logo"
+                    position="Technical Support Engineer"
+                    company="MIIT LLC"
+                    period="Oct 2023 - Nov 2025"
+                    description="Diagnosed and resolved network connectivity issues, applied deep knowledge of the OSI model and TCP/IP suite, and provided seamless technical assistance. This role built my foundation in deep system troubleshooting and user-centric problem-solving." 
+                />
+                
             </div>
 
         </div>
@@ -29,12 +43,14 @@ import Experience from '../UI/Experience.vue';
     Figma File: https://www.figma.com/community/file/1313934100864626000/alternative-linkedin-opentowork-banners
 ***/
 import DuckWhichOpenToWork from '../../assets/icons/open-to-work.png';
+import MIIT_LLC_Logo from '../../assets/icons/miit.png';
 
 export default defineComponent({
     name: "MyExpirienceSection",
     data() {
         return({
             DuckWhichOpenToWork,
+            MIIT_LLC_Logo,
         });
     },
     components: {

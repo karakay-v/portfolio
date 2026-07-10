@@ -9,7 +9,9 @@
         <div class="container-top">
             <div class="container-title">
                 <img class="image-icon" :src="icon" :alt="position" />
-                <p class="paragraph-title">{{ position }}</p>
+                <p class="paragraph-title">{{ position }}
+                    <span v-if="company != ''"> / {{ company }}</span>
+                </p>
             </div>
         
             <div class="container-period">
@@ -43,6 +45,11 @@ export default defineComponent({
         position: {
             type: String,
             required: true,
+        },
+        company: {
+            type: String,
+            required: false,
+            default: ""
         },
         description: {
             type: String,

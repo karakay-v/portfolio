@@ -6,14 +6,14 @@
 
             <div data-aos="fade-right" data-aos-duration="2000" class="container-banner">
                 <h2 class="banner_heading">
-                    <span class="display-regular">Hello I’am</span>
+                    <span class="display-regular">Hello I’m</span>
                     <span class="display-extra_bold"> Vlad Karakai.</span>
                     <br />
-                    <span class="display-extra_bold">Full Stack</span>
-                    <span class="outlined-extra_bold"> Developer</span>
+                    <span class="display-extra_bold">Software</span>
+                    <span class="outlined-extra_bold"> & Infrastructure</span>
                     <br />
-                    <span class="display-regular">Based In</span>
-                    <span class="display-extra_bold"> Kyiv.</span>
+                    <span class="display-regular">Engineer.</span>
+                    <span class="display-extra_bold"> Based In Kyiv.</span>
                 </h2>
                 <p class="banner_paragraph">
                     I began my coding journey in 2021 and since then I’ve been creating digital things that (hopefully) make life easier. When I’m not coding, I’m probably reading about psychology, working out, or trying to make music - though whether it’s really music is still up for debate.
@@ -37,6 +37,10 @@
                         :icon-position="ButtonIconPosition.Center" 
                         :state="ButtonState.Active"
                         @click="openLink('https://discordapp.com/users/karakay/')" />
+                <Button :icon="TelegramIcon" 
+                        :icon-position="ButtonIconPosition.Center" 
+                        :state="ButtonState.Active"
+                        @click="openLink('https://t.me/karakai_vladyslav/')" />
             </div>
         </div>
     </div>
@@ -51,6 +55,7 @@ import LinkedInIcon from '../../assets/icons/linkedin.png';
 import GitHubIcon from '../../assets/icons/github.png';
 import RedditIcon from '../../assets/icons/reddit.png';
 import DiscordIcon from '../../assets/icons/discord.png';
+import TelegramIcon from '../../assets/icons/telegram.png';
 import BackgroundPCBoy from '../../assets/covers/boy-cover.pc.png';
 import BackgroundMobileBoy from '../../assets/covers/boy-cover.mobile.png';
 import { ButtonSize } from '../../types/button-types/button-size';
@@ -66,6 +71,7 @@ export default defineComponent({
             GitHubIcon,
             RedditIcon,
             DiscordIcon,
+            TelegramIcon,
             BackgroundPCBoy,
             BackgroundMobileBoy,
         });
@@ -120,7 +126,7 @@ h2, p {
 
     h2.banner_heading {
         white-space: nowrap;
-        @include fonts.responsive-font(48, 28, 1440);
+        @include fonts.responsive-font(48, 24, 1440);
         @include fonts.prevent-selecting;
         
         span {
@@ -201,6 +207,10 @@ h2, p {
         margin-top: 32px;
         position: static;
         gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+        gap: 16px;
     }
 }
 </style>
