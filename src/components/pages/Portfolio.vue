@@ -5,7 +5,7 @@
     <MyExpirienceSection />
     <AboutMeSection />
     <MyProjects />
-    <MyTestimonial />
+    <!-- <MyTestimonial /> -->
     <ContactMe />
     <Footer />
 </template>
