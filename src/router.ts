@@ -16,7 +16,7 @@ const routes = [
         path: '/resume',
         component: Open,
         props: {
-            path: '/CV/Karakai-V_CV-EN.pdf', 
+            path: '/CV/karakay-v_cv.pdf', 
             delay: 1000,
             timeout: 5000,
         },
