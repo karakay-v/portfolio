@@ -13,7 +13,6 @@
     "@emailjs/browser": "^4.4.1",
     "aos": "^2.3.4",
     "floating-vue": "^5.2.2",
-    "node": "^20.19.0",
     "vue": "^3.5.17",
     "vue-router": "^4.6.3",
     "vue-scrollto": "^2.20.0",
@@ -31,5 +30,12 @@
     "typescript": "~5.8.3",
     "vite": "^7.0.4",
     "vue-tsc": "^2.2.12"
+  },
+  "engines": {
+    "runtime": {
+      "name": "node",
+      "version": "26.8.2",
+      "onFail": "download"
+    }
   }
 }

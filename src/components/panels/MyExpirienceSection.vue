@@ -15,7 +15,7 @@
                     :icon="MIIT_LLC_Logo"
                     position="System & Infrastructure Administrator"
                     company="MIIT LLC"
-                    period="Dec 2025 - Present"
+                    period="Dec 2025 - Aug 2026"
                     description="Managing ISP network infrastructure to ensure high availability and stable performance. Configuring multi-vendor environments (Cisco, MikroTik, Ubiquiti, Juniper) and acting as an L2 escalation point for complex network diagnostics. Additionally, I lead the technical onboarding process, mentoring and training the L1 support team." 
                     :isFocused="true"
                 />
