@@ -69,7 +69,7 @@ To get a local copy up and running follow these simple example steps.
 This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```bash
-  npm install npm@latest -g
+  npm install -g pnpm
   ```
 
 ### Installation
@@ -78,18 +78,18 @@ This is an example of how to list things you need to use the software and how to
    ```bash
    git clone https://github.com/Karakay-V/portfolio.git && cd portfolio/
    ```
-2. Install NPM packages
+2. Install packages
    ```bash
-   npm install
+   pnpm install
    ```
 3. Run locally
    ```bash
-   npm run dev
+   pnpm run dev
    ```
    > To share in your local network use `dev-local` instead of `dev`
 4. Build production
    ```bash
-   npm run build
+   pnpm run build
    ```
 
 
